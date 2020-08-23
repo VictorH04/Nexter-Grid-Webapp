@@ -1,0 +1,72 @@
+.footer {
+    background-color: $color-secondary;
+
+    grid-column: full-start / full-end;
+    padding: 8rem;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    align-items: center;
+
+    list-style-type: none;
+
+    &__item {}
+
+    &__link:link,
+    &__link:visited {
+        display: block;
+        padding: 1.5rem;
+        color: #fff;
+
+        font-size: 1.4rem;
+        font-family: $font-display;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+
+        transition: all .2s;
+
+        &--name {}
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: rgba(#fff, .05);
+        transform: translateY(-.3rem);
+    }
+
+}
+
+.copyright {
+    font-size: 1.4rem;
+    text-align: center;
+    color: $color-grey-light-2;
+
+    margin-top: 6rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 70%;
+
+    &--name {
+        margin-left: .2rem;
+        font-weight: 700;
+        color: $color-grey-light-1;
+        text-decoration: none;
+
+        letter-spacing: .2rem;
+        transition: all .2s;
+    }
+
+    &--name:hover {
+        color: $color-primary;
+    }
+
+    &--project {
+        text-decoration: underline;
+    }
+}
